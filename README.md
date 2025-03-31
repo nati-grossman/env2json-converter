@@ -1,22 +1,29 @@
 # env2json-converter
 
-A TypeScript library that converts `.env` files to JSON objects with type safety support.
+[![npm version](https://img.shields.io/npm/v/env2json-converter.svg)](https://www.npmjs.com/package/env2json-converter)
+[![GitHub license](https://img.shields.io/github/license/nati-grossman/env2json-converter)](https://github.com/nati-grossman/env2json-converter/blob/master/LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-14.0.0-green.svg)](https://nodejs.org/)
 
-## Features
+A powerful TypeScript library that converts `.env` files to JSON objects with type safety support. Perfect for TypeScript projects that need type-safe environment variable handling.
 
-- Convert `.env` files to JSON objects
-- Type-safe environment variable handling
-- Schema validation for required environment variables
-- Error handling for missing or invalid files
-- Zero dependencies (except for development)
+## 🌟 Features
 
-## Installation
+- ✨ Convert `.env` files to JSON objects
+- 🔒 Type-safe environment variable handling
+- ✅ Schema validation for required environment variables
+- 🚨 Comprehensive error handling
+- 📦 Zero runtime dependencies
+- 🧪 Full test coverage
+- 📝 Detailed TypeScript documentation
+
+## 📦 Installation
 
 ```bash
 npm install env2json-converter
 ```
 
-## Usage
+## 🚀 Usage
 
 ### Basic Usage
 
@@ -60,7 +67,7 @@ const config = envToJsonTyped<DatabaseConfig>(".env", schema);
 console.log(config.DB_HOST); // TypeScript knows this exists
 ```
 
-## API
+## 📚 API Documentation
 
 ### `envToJson(envPath: string): EnvConfig`
 
@@ -98,7 +105,7 @@ Converts a `.env` file to a typed JSON object with optional schema validation.
 - Error if the `.env` file is invalid
 - Error if required variables are missing (when schema is provided)
 
-## Example `.env` File
+## 📝 Example `.env` File
 
 ```env
 DB_HOST=localhost
@@ -106,7 +113,7 @@ DB_PORT=5432
 API_KEY=secret123
 ```
 
-## Development
+## 🛠️ Development
 
 ```bash
 # Install dependencies
@@ -122,10 +129,32 @@ npm run build
 npm run lint
 ```
 
-## License
+## 📄 License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 🔗 Links
+
+- [GitHub Repository](https://github.com/nati-grossman/env2json-converter)
+- [NPM Package](https://www.npmjs.com/package/env2json-converter)
+- [Report a Bug](https://github.com/nati-grossman/env2json-converter/issues)
+- [Request a Feature](https://github.com/nati-grossman/env2json-converter/issues)
+
+## 👥 Author
+
+- **Nati Grossman** - [GitHub](https://github.com/nati-grossman)
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who have helped shape this project
+- Inspired by the need for type-safe environment variable handling in TypeScript projects
